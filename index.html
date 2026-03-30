@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Feed - Bootstrap Luis Timaure</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-   <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
-    <nav class="navbar navbar-light bg-light mb-4">
+    <nav class="navbar navbar-light bg-light py-3">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <i class="fa-brands fa-instagram fs-3 me-2"></i>
                 <span class="fw-bold">Instagram</span>
             </a>
             <div class="d-flex">
-                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#createPostModal">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                    data-bs-target="#createPostModal">
                     Create a new post
                 </button>
 
@@ -29,7 +33,9 @@
                         <li><a class="dropdown-item" href="#">Profile</a></li>
                         <li><a class="dropdown-item" href="#">Accesibility</a></li>
                         <li><a class="dropdown-item" href="#">privacity And Data</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
                     </ul>
                 </div>
@@ -40,7 +46,8 @@
     <div class="container mb-3">
         <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid-view" type="button">
+                <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid-view"
+                    type="button">
                     <i class="fa-solid fa-table-cells"></i>
                 </button>
             </li>
@@ -53,41 +60,110 @@
     </div>
 
     <div class="tab-content" id="myTabContent">
-        
-        <div class="tab-pane fade show active" id="grid-view" role="tabpanel">
-            <div class="container-fluid p-0">
-                <div class="row g-2"> <div class="col-4">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN4HJhnJo07reTM0Lta1HoTollHloqsqRUVw&s" class="img-fluid w-100 insta-photo" alt="foto">
-                    </div>
-                    <div class="col-4">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN4HJhnJo07reTM0Lta1HoTollHloqsqRUVw&s" class="img-fluid w-100 insta-photo" alt="foto">
-                    </div>
-                    <div class="col-4">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN4HJhnJo07reTM0Lta1HoTollHloqsqRUVw&s" class="img-fluid w-100 insta-photo" alt="foto">
-                    </div>
-                    </div>
-            </div>
-        </div>
 
-        <div class="tab-pane fade" id="feed-view" role="tabpanel">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="card mb-4">
-                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
-                                <h5 class="mb-0 fs-6">My Crazy dog Spark!</h5>
-                                <small class="text-muted">08/26</small>
-                            </div>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN4HJhnJo07reTM0Lta1HoTollHloqsqRUVw&s" class="card-img-top" alt="post">
-                            <div class="card-body">
-                                <p class="card-text fw-bold">204 Likes</p>
-                                <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
-                            </div>
-                        </div>
-                        </div>
+        <div class="tab-pane fade show active" id="grid-view" role="tabpanel">
+            <div class="container-fluid px-4">
+                <div class="row">
+                    <div class="col-4 p-1">
+                        <img style="height: 30vw; object-fit: cover;"
+                            src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+                            class="img-fluid w-100" alt="" />
+                    </div>
+                    <div class="col-4  p-1">
+                        <img style="height: 30vw; object-fit: cover;"
+                            src="https://c4.wallpaperflare.com/wallpaper/229/140/44/students-boys-girls-study-wallpaper-preview.jpg"
+                            class="img-fluid w-100" alt="" />
+                    </div>
+                    <div class="col-4  p-1">
+                        <img style="height: 30vw; object-fit: cover;" src="https://wallpaperaccess.com/full/1149888.jpg"
+                            class="img-fluid w-100" alt="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1">
+                        <img style="height: 30vw; object-fit: cover;"
+                            src="https://c0.wallpaperflare.com/preview/28/977/291/smiling-woman-with-white-background.jpg"
+                            class="img-fluid w-100" alt="" />
+                    </div>
+                    <div class="col-4  p-1">
+                        <img style="height: 30vw; object-fit: cover;"
+                            src="https://i.pinimg.com/originals/02/5c/ba/025cba8ce33ed90181ddc762e69141d5.jpg"
+                            class="img-fluid w-100" alt="" />
+                    </div>
+                    <div class="col-4  p-1">
+                        <img style="height: 30vw; object-fit: cover;"
+                            src="https://i.pinimg.com/736x/af/03/e8/af03e8f301698efda8006b4da49ebf52.jpg"
+                            class="img-fluid w-100" alt="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1">
+                        <img style="height: 30vw; object-fit: cover;" style="height: 30vw; object-fit: cover;"
+                            src="https://wallpaperaccess.com/full/1447218.jpg" class="img-fluid w-100" alt="" />
+                    </div>
+                    <div class="col-4  p-1">
+                        <img style="height: 30vw; object-fit: cover;"
+                            src="https://images7.alphacoders.com/122/1228014.png" class="img-fluid w-100" alt="" />
+                    </div>
+                    <div class="col-4  p-1">
+                        <img style="height: 30vw; object-fit: cover;"
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFRUVFRUVFRUVFRUVFRYXFhYVFRUYHSggGBolHRUVIjEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHSUtKystLS0tLS4tLS8tLS8xLS0tLS0tLS0tLSsrLSstKy0tLS0tLS0tLS0tLSstLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAYHBQj/xABKEAACAQIDBQUFBAUJBgcBAAABAgMAEQQSIQUGMUFRBxMiYXEUMoGRoSNCgrFSYnLB0QgkQ6KywtLh8RUzc5KUsyVUY3ST0/AX/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAKxEAAgIBAwIFAwUBAAAAAAAAAAECEQMEEiExQSJRYXGxMkKBEyORodEz/9oADAMBAAIRAxEAPwDFstACnnpC0i0hSJRuaUDTDtUrkpugyaUtN04lNolOwnFNmnmplqaCQQpVBactQSkMmhSiKTTEKWnFpmno6Q0SIxTppkGgZKllpBSiozU8zUy4qkTJCaFT49n5VWSa6q3urwZh18h+dPJiUAssY9eJ9KZJyrUYNdNjGw8Qt5i1/lTEmC0urBuvIj4UrHRFNC1KK0AKCkJtRijo70h0OxPUm+lQkanu90ooViJaavQkekA1VE2KIowlBaXepZUVYMtNstOigVospxGwKFHloUxUExpNLNJapTNckaQktSKM0VWc7DBpYam6FAhzNSSKIUukMSBR5qBNIpgLFDLSAaWGoAIinI6TTiikOg2NN3pbU0xpGq4Q4tdDZrxoS8iZ7e4p93N1YcwOnnXMVqlohawFFEOQvau1ZJ2zSNe2g8h5VDFT02VITbKTUmDYshNsvCnZNM5FiKcgchgbX8uXzFd3EbAmA93So+B2RK8ndBCW1NvIC5NFoe1kPEwg6jTyuKhGu1iYchMZUqymxvoR8DUDacGUg9R0tw69fWpH0IRNFR2oCqEEaK9GaAFNEsSaMClWpN6GCFXowaSop0R1JokBTSr0nLR2osOQqFC1CmSIoNRUDUo3yPgbNFRmiqzlBQoUVACloyaSKM0AFQoqFAAo67+zdydozmyYOUcPFIpiWx55pLD5Vb9k9iWOlP2k8Ea8yueQj1FlH1p7XVk743VmapS81bts7sHwoA77GTSH/wBNY4l+oc/WpeJ7HNkR2Ly4gdAZku39SkotukXuSVs8+M1Nsa9BY7s22WkeePByyLzYyzkjzCIwJ9eFQcD2dbGnhe7PDIcxVlkk8GXkBJcMeq8at49q5avy7/wR+spOkuPPsYvsfZsmJlWGIXY6k8lUcWboB+8CtUwu4gSBS2rW+lWPdDYGHwMBWEmV31mlZMrGxsqlbnIo5C51PGupLigTblXPkk4y2tUdmHB+pHcnZRIt3CGst/XjViGzRHCXcKMq5izGwtfQac/4+dTMZOiKSBauPI2ImMDK5XD5gshUqCCQAC1wSwBBFgQbsKyc7OzDgUbbEGQFFZfdcAgHW1/P99S9hQqkuewBsRw61KfZimyh81h8flyo1jWP3jZR86Tk2iv01dlT7VsNFGIsSEGYv3bHgdVZgfO2UjWqHtvagmVEXguvkDw0HCrl2obXhmw6xxhgUmja54MDHKLjXlp86zda1h9JxZnc3QLUg07amnFaJmMlQkmgtFagBVGYs0mhelKKBDkIqQRTMelKd6h9TddBDGklqSaKnRDYvNQpFHTJBREUsCktSRc3Y0aFqVajApmdDZFFS2pFMQpaM0kUsAnQC5OgA1JJ5AUAStjbJmxcyYfDxmSVzZVFhwFySToABxJr0DufuNh9kQh5Ak2NbUyEXWLyiB4AfpcW9NA12Zbp/wCyMLJicQF9qmCjLziQ6rFm6k+Jrfoga2vXawlpHMk8gWNfHI7kKoF+BJ0AJ0rpwYk05y6I5s+VrwR6s7GycM8v2jk5eXV/P0qJvHhJ3ilR4jKkmaCLCwOyIyyAr3mJnsCq2uSBotz75tbu4HHwzLmgljkQaZonV105XUkVz95Nr9wmRD9o40P6K/pevT/Kk3LNOkOKjijbKHBtGeD+bYSSbETLN3eKxRbPHDa+aDCRTyH3CFXMQx4+8dB0FkfDyuuNZ8ZKsQxGRVjjkWEsUBdiyrI5YMAiAe7rxFdXZu68MSy4uQdzPJGymVLCRA40fW4aW9iCwJHDmari4DGSSriyrYwxIuH+zVYpBh8+dnOdyJptBpdRx0110jHbe18LrL/CJS3Vu69l/pY23m9qZMPhiImdAwR2EcwSw4xnVBrwAvXaw27sVgZgJJOb2yn001PqaqGyRFCJoZcN3s82NbF4XBFkM6J4AkkxzWiUMjNck2BHE+GrbsXD4iFZJcZiQ2fxmMAd1ASblY5CM7Law158AL2rKWS+Iqvk1WKuZO/gXt3dyLEwez55YVve+HkMTXtzI0b0YEVR9pbtYvCqbye0RA6S2Cyop0tKo0bl41+IHE2qLe1TOEy2iPhznjm5MRyX/XyqxTwrIrIwurKVYdVYWI+tZZsMvv7m+n1G13B8GH7SZytieHGi2LBLEGJk+zJLIgJuC3G9tLcdK6e9mFOCl7t9Q2sbn76+fLMOf+dUKTeLxGNCbXI/0rh2tHrPLF00y6R4yzA35/l+VTsfhxi4zHZTmsPECQL87DjVY2XKJioGhuB8TXQ2Zt/ucUkLRZ1LWLK5uh1AOgsR115+VRfJd2uTPd+I3jxj4cuWWHIq8tCisTYcyWrkRR1Zt/cBM2OxE4gm7ouLSd1JkIVFW4e1rXHGuHABauv7UeXL637iBFSWgqVR0hkMYeg2HqWxtTRkp2yWkQpYrU2tS5mFRCatGbF3oi1JzUQp0OxdFR0VqYhYFClAUKQ6G70mjNEtId8hkUk04aQwpAxtjSaUaTVEMMVoXYru+2J2gkzRF4cPmkZiPAJQv2QvzbNZreV6r+4u677RxSwglYwVMrgElUJtYEAgMeAJ0/I+jd18AmAjeCKMrAt2zNYfa6AgW1bQAluHDU6gTuuSigfEbYjfCe7ol9Ld4x8hcLr01b5VWNs7bRYO4jUOJCveEg3N2yoqj6+tDtHxDOyiO5S6xsFBJcm7Kt+mY2tztaubsLFCLFpni7x+/MKZnyohjS3eABTmIKv0A4125JbYKH5OSEVKbn+B3sj3cbCrLtLEK6MUZUiKsjEEgl3U21OgW40uTzq3bvxNi52nkFwpvblm+6o8hx+XWo2O20cQ5w8fAkX+B4HpzJ/Zqo4nfWR3fC4NwmFUMnfKPtJnPvSB/uqTfLbW1jfXSYS2Y77v4Kkt867L5LxtnHe1YlcLHIuh93MLm3vPl42HL/OrVhMMsSCNBYD5k8yfOvKM2HZGcMpV0a7AgqytfQnmDfW9W7djtRx2Essre1Rfoyk94B+rNqT+IN8KmeS0orhIuGOm5Pls33EQxXEzqmaMNaRlGZAR4rNa40rP9r7wNiJCrEqmb7McB5FvP+NFit9otoxAYcOqLbvUcAMH4hTYkEDjcHX4VzMSgIseB5/vrr0uJJb31OXU5W3sQ9Jpx+dXjc3aLSxFWBPd2Afkw5C/Ufwqp7oYD2vPG7WERAJHvEG9gPkda0LDYZIlCRjKqiwHL/XzpavLFrb3+CtLjknu7EbeTYMOOgaCYGx1Vx78b8nQ8iPkRcHQ15X2rs2XA4qTDTDxxMRcjRxxV1/VYWI9a9bCT5GqN2t7lrtDCmeNf51h1LIRxkQatCevMr0Pqa85o706MJwu12U3XQ87Hr06Vdthx96EmlZIkAIzMVjFs2a2bixuAP8AU1RNi7NaU3HAWNuZv0qz7VwzRxpJJEZIo1BykkNkzHRWsQov4m0rgypSlSO+GSUYX1L5sbB7QleRGxk0OVB7OUdWTxAMDMrA5xqBbkBpao2I3Tw+Ij9oxEB7yOzSSxWgjxI8QKNGpOSRbG5Fj4R10f3P3rw2JmWPDYf2dI4/EL3BJOlh89ed6lbxz4xpJ1nysvu4RIi4L5xbM63y6KTx+9rcCrlLZH2JjHfKLrr1M67QN0PYJEeJmfDyjwM1iyONTGxAAOmoPMX6a1QmvROP2BHj8EMLOxDeEq68UlUWzAcxqbg8QT6154niKMyNxRmQ+qkqfqK2i7VmWSO2TRGkeo7vT0oqM1WZiWemzTlqQRVIhgFC9FR1ZItTS1pqjzUmMlKaFRw9CpKsJjSL0bU2TQSxYelA0zenFNFDTA1Jo2pIpiZpXZTtw4fJCsZc4rE90SvEEomUt1QHKSP0S972tW5bUxarCWVg490G4N24a+d+P5VivY5saHEZ3M0iywuHVVUL3bFSqSpJm1v4gVK2OUdKv82HkUBpCpuzKGjuquq5bM0fBW1IsNNDYC5rfR4oynbfJz6tyULrgdw0ojSXEPY9zG8ovreT7nxzEVT92Jy0uc69xDPN1N8mTN85K7O+uIMWzso44idVP7EQ7xv62UUx2cYZThcfOdQIGi+ORncX/wDjrTVS3ZGl7Genjtgv5KrjdtOmHmKm0kyhMw+6rMGkt5lRl9HNdPsf2UuIkuRpADL5F7gIp+RPwqpbaltlj5rHmfX70niAt5KEP4q2rsy3eOBwIzn7SUiV/wBUsBlT4Dj5k1zy6m0FwdnbmwIMZEY541cE+8RZhx1VhYg6nnWMdpG467NVJY588crlFjcfaqbFibro6i3Gwtccb1vsQ0+NedO0neRMbtE3ZjhoLwpksSQD9pIoOmrc+irSRoR+z3aAjxDRsfDKlr/rISV+jNV3xE5Hh1v93qeq/wAKr2xdlYNVSaEmS4IDsTcHgwyaAHlwq27m4T2iUu/DDkE+b/0Z9NL/AA869HHePH4jgmlkycFn2Hsz2VUYe+7K7n9rTL+EE/G9Wl5hz58BXE2licniPMjTobjMfTjUiWfKYzxvxrz5ScnbO+MVFUjoq+npUiJudQpJwhW4Ounl5Xp2ObyqRmZtg8NhcXNhpEVI2ZssuX3c7maM+iiXIT09K5uIw0uHmlWS2tih4qRbip5gi1WTtDwaM2coyy5VyOGukkYYKVI+4wzA+YHlVbG0y0AglUuie6dBJHoQArcxqDY9K8vUx2z47nfhe6Ks5O6UZjxGZngDSFlyRqiMQLEOyooyj1Nzf56zC+gPG2npWWSbMJeOfDvGxQjMrHJIV53U6EgE8CeFalgoLXs11IB9Dz+FaY5WjWKUVQ8NGVrWynNf0rCO06EJtCVliMayhZV0srlh45F9WDX879a2faOJzaDh04XrEO03avfYywkzrFGselsqtcsyg8+Iv5i3KtoGWeqKy7VGY0Zek1ukcbYamiYUAKOgOo3aipwikGqTJaoMUdqTelKabEharQoxQqTShmQ02aBNFTM2HS0pulKaAHmFN2pQaibhSKZuPY/s0QbOecjxYhy3nkS6IPnnP4qt22fCsCngsXeH1c3P5VAw0YgwWHw68RFEnqcqgn4nWnN6tqYcYpYJJ4o9EXxuqeAGxNzyvmH4a30X/RyfYy1y/aUV3Kj2m4yxw0F9UhzsP15jmIPwCVYN28MIdh+LQYiR2c/qE5b3/YjHzqib34sYrGyyAgq0mWPLY5lBEceXyIANanvbgBHgosJHqEgMY5k2QIDpzOtVj8eT+zGfgx/0YzuXhxtDawGXwNM0xHSKPxKp8rBF+NejsSLKAOtz51hf8nyMHG4h+Yw+UHpnkUn+xW64usDfuVPtG3iOCwLBWtNPeGG3EXHik8sq3+JWvOa4RiyxqLliFUeZNhVt7V94fa8eyo14sNeGOx0LA/auPVhb0QUzuXdS+IZQwXwJf9I2zEegI+dXCG6SiLJLbFssuEwfdwpBGL5PCOrMTqbdSx+taVs3ZvssaZbE5bzW+9m94+djw9BVc3GwfeStObFYrEHiC7cPkLnyuKveJa0ZtfUE+nlXRqZ9ILojDTQ4c33Kjt3H63V7o1wL/dsNL9K7sUveJC1/ug/Ss67RMT7NCHH+8kYJEvU3uzHyA/MVbdzMX3mGgLjKQtiOhBtauU6i3EZlAPrSwLGmkbWpGGa4Knip+lAGSb8SsuOlS5s9nUG5HgjgJt8WGnkfOocmFYZZI7tfNmGU+6uUkg2/WrrdpmGX/aEDF0jARmu5ABuhBW50uRELX6VylxgijdQTmJVLcboQ+gB4cfr5V5+sg3NV3O7TyShyFFACPs3sx4EmwAAub6a8/OugNq4pAFilDaclNr9PFUXC4WUp3p0UElVUe8QNbkakaH5GoUUpJYCwDasBcj4EkkaVrjxrHDkznNynwSO0TeZ4sMFj/wB5MApYEju1dSSV8yARx0vesevVt38xZkmSM8I0v8XN9fwhPnVX7qtMX02Z5W3IbFOAU4kNLMda2ZUMEUVG4pNJlII0m1HenEWhCY3loAU8wpkmnYJDgoUBQpFEU0KBoUzMKhR0VAC1p2NgCpYXW4zDqt9R8qZWlE0AegcPjknxkLI4aPMsgsbgog7zT4LVD33maXaMrEHwBVuQQDpmNj0zOaR2NYeR55XzHuoY+F9BJMSq2HLwiU6dK2zcdCe+lP3nCj4C5/tD5VvixbcMpeplmy7syXoef9r46IxQRqFEg70ynm2Z/swb9FHL9KtH7H8BcZj7uZbdLRLcW6eJ/pWr47DxOPtY0dQLnOqsABrzFV3dSJLyvGiopPhVVCqM7X0A0GiijGmk5eS+SMjTaj5v4Mz7GZI8PisTBmHed86BSRmKRaC3XW9aZ2jbb9iwM049/KEi/wCI/hQ/C+b8Nec9+I8m0sVluP5zK6ngdZCcwPrwNScfvZjMRhRhZ5jLGGRl7wBpFKXAtJ7x0J969ZG/qV9ASQBqxIA6knQfEmtSwGySEhw8Wptb1bUux+pqh7sYTPNnPCMZvxHRR+Z+FbJ2c/aPJpfLGdehLLw9dflXVg8MXM5s3ikoFo2NgUw8SpGfCB4urE8SfMmupBMHDDyI9KhtioogBIfE2tgL6VTd+t+MPhkMWDYyYyTwIignuy2mZvMch1tyrmbvlnUuEVrbMn+0Nr5R4oMEpTyMg1c6frWX8NWzd5jGSh4E5h8dDUXcvd32LCBJCDLI3eSn9Yj3b8TbrXG3r2/7JiYNbKDeQdVY5STz8IufW1IXQ1WCQEC1SVmIbMB5Eda5WznuAePS3O/SusqDQ/SmBC25u9hcY6vOrHIALZVKeEkgkspsRmbUEcazfFrgp8ZKmFk7zuAmoa6k6l8jXOZbn3uo6a1w+0/ejEbRxTYLCsThoTkYg5UkkHvtI/AqCCAOeUnW4rp7j7vJhY+8/pW+zZm0AucymMW0Fxbzy1lkaN8MXJ+hK7kxg3JzXzZ+dr8QPjb4EVFCBFcqFLyHIi3PgLNrpbXS/DpXR27MObC65hYDSwOoseH3beho92sMAfa8UbLEDlDEkBbXJ9Ta1v4Vx6mfhUV3N8WOpNvsZNvWGXGzq/vBwOFtAq205aWqFFTu9O0RiMZiJ1vaSRmF9fL5aaeVQ4pK6oqoo5m7kzoKoonGlNRy04TekWRZUqMwqZKKjEVSY9nA0BUiMU2op0NTsyobmNMUuVqQBVIlj4FFQBoUDI1GBQIo1oEERSadNNmgGAUqk1N2Ps58TPFh4/flkWNfLMbXPkNT8KBGxdn+B9l2UjkWfEtJOb8Qo+yiHpYOw/arU918N3eFjB4kZz6uc35ED4VVNpYVTJHhYtI07uBR0jiAX+Jq+xrYAV25VsxRh+Tjx+LJKX4OPvbi+7w0hHFwIx+Lj9L1C2M/c4Ay87O/yFlHzH1rn7+YktJHCuthe3Vn0A+Q/rVM3tYQ4NIRzyJ6hRcn6fWmo/txj5sTl45S8kcv/Y0GLwSieJJMrSHxC5BzEnK3FTZhwNZ/vB2eYeKSMxzOI5A5MbAMQUtZVkvwN+YJ049NX3Tw59jHV2Zx/Zt8cp+dUzfVT3igfdQlfg3i+hHyrNRjLK0/U0lJrEmvQ4i4KBUCqqoByUDieZ6nzq6bg4H2dMxNxiNb9FGifvP4hVWwtneIAeGUiMjoWNh8r2rVsZs1coEYtlACgcAANBW2qaUVFGeljbcmV3tEjii2fiJgl5cndxEFs3eykRoV14gsD8Kqe6u7kOEIKxgygWeRvE5b7xDHhr0qw9o2OAw2GDIWDYvDFiOA7uaP3vUEj/SqvtnfSDDZ7hncEgKLAF+hY/Ui9cLTOy10OrvxvXHgIAQA8smkcZPTi788o+prENp7TlxMjTTNmdjryAHJVHIDpTe19py4qZppmzO3wVQOCqOSimFqSjVt1O1FIoI4GwzPLHGFuJAEcIAL8CQba2tyNFtXtDxeIGW6wIwOVI8ysRwGab3hf9W3CsthkyMrj7pB/iKt8k4upWwBVrHpnFkkFuB1sfhRYI7Wzdqrh0yLEqxnwjhq6kC4Q3uNfeJHCum22Vc2B8QVkKm4JbkxFyNCWN78+FVbG4rvVjJAFoQT5srst/p9a6xiJBaGF3dUW6rzkZFDXPKzH5VDiu5oskl0O5sLCmVmZycqsLk6sLnQcCSfCbDmR5a8ztfE0WHhVFdcPIzB9SblbBBKQct28Rtw8A5ipW5W18XI7IMN7yGUKv3ypyg3JFhc2OtWreRNo43CSYUYKIROuXxMMy5bEMPFbMGAINjwrkjBvLvlRU80VDak/wCGecaWtKxuFeGRopFKujFWB5EfmPPnSENdpiuo8j1JSWohoK1S0aIlSGo5NGXpBNSkdF+El4fZ88gvHDK46pG7D5gUjG4GeIAywyxg8DJG6A+mYC9eiuyJrbNw/wCyf7Rrg/yiXvg8N/7g/wDbetKOVy5MHvR2pK0umSHR0VCgKGqKjvSabEKvSTSrUk0gCrS+wzZoOKmxrjw4SLwf8aa6J/Vz/MVmtbvuHsv2TZMJPv4t2xL+SWCxLfpls3qxrXDDfNRMs09kGy0btxZ8SXP3FJv+s2n7z8qvAqr7kQfZtIfvuT+FdB9S1dza+K7uCSTmFNvU6D6kVvqHvy0vYwwrbjt+5TMKPaNoluKq7P8ABPCn1y0nf3ElpkjGuVb2/Wc/wUfOpu4eH0kl6kIPRRc/mPlXJwJ9q2hm4jvC/wCGP3PyWt21vb7RRlT2Jd5MvOzcP3caRj7iKvyqk9pqCERTkeEyBCegcG9/iAfnV7w58VVztDiSSFIH4Oxb/lW396uTDbyI681LGyibBjCYlUY+G5KdM1jl16Xsa1CTaZTKXHgYDxDip5gj1rJMJhJARCTeSMqEbm6E2U/uPoOtbL7OrLbiCANddRz9a11a5RlpHw0UHtW2pGMPBGlnafFwd3Y63RwxNvp8ay3tYWAbRkSDgqgvx/3j3dh00BXhXSx22lfHzbRdAsGDZo4IyMpkxFmEaW6i2YnllB52qg4rEtK7SObu7F2PVmNzXJN1wdkPMZtRXoyacweGaWRY095jYXNh6k9LXNQhsIcK6Oy9rCMqsgzoDwBAYDmAeY8qum7O5ksWaRhh5TpYMbheujqNfMV1cVi51IQRxx+aAj62p0Kyv4XaeBawUOXtogQsTrmIGUkcddai4nb+JRXijwpRWIsWVzJoSb34Bjexty+dXrZeHxeI8HhdLjMGNwfgRarrsfdtE1mgwxPICND/AHazcGynJP0KBuDLjpSSMOFURhO8yyAgeFSQwOYnTNYedXnE7RxUSJ3cCvJ48xIaNV8RA0lk8V1N+PL5WOLBQjhDCPRFH5CpCRIOCRj4CoWGvIltv7meb+0HZe0MTiPaZMNcmyfYKGuFvlLLGzG9tLm3AVWU3cxv/k8T/wBPL/hr18kluail97+sPlW0U0qYjyEN2sd/5LFf9PN/hqDjMHLC2SaOSJrXyyIyNY8DZgDbQ/KvZfeD9L6VUd99wsLtRonmkmRogygxZBcMQbNmU8Laepp0PceXb0RNWbfDcnE4PEzRJDPLDGQVm7l8pQqHuWAy3W9ieqnhVVJqaL38HpfsnH/huG/Y/ear38oU/wA1wo/9dv8AttXe7KJlOz8OoIJWMXF9Rcm1xypfadusuPhiD4juFjk97uzLmZxkUWDCwueNUZnmo0YNXb/+U7TJk8EYCOVBklWMyKDbvEDfc8zTsHZZiAR32MwMQvrfEZmA52UDX50DTKPQrXotxtjxqEkknmdQA0scmRHPMqmU5Rytc8KFA7MZoUKFMkcWjK0hadBqWUkKwOBaaWOFPelkSNf2nYKPqa9Jb35YykKCyxRJGo6ACwHytWO9kOz+/wBrYbS4iLzN5d2hyn/nKVsWMXvtoZeIElz6Rj+It8a69HxJyfZHJq+Uoruy17IwvdQInMKq/H7x+ZNcnfvE2gCjm+voov8AmRVhJ4DpVX3oi72SCLiGJJ9CwzfRTRh5yW/cnKqhS9g4j7Ns+/Bu6J/HJw+rD5Vx+z+HxSy/soP7Tf3am7/YrLCkY4u1/wAKf5lflUzdODusLHpq93P4uH0y1Um1jb82CX7qXkjtrJZ6p2/WKvOq8kT6sbn6ZasGLxgzAAH1tpVE3qnb2mQN1FvMZVy/S1RpfrsrUvwUcXauOeGWDFJqYn1B4FLgkH4qPpWzYbEKyJINElVXA6ZhcfnWOyR51y8dbW8zwrWdkQGOFcOxuY1VVPVQLVpql0ZGlfUrO9G6+EnE+EsscuJWTERkjw9+pJMgI1DAnMRxKs9uBrL8H2YK4uNq4T8KyH8wK0PtHxogmwkwNpIZo2vy7syLG1/VZJRVcwRvI5sBmLNYaAXN7AdNa5pQ6HSpdTmx9kKHjtWD4Qsf74ru7K3VhgAUYeJymne+DO9tM981xf8AfU2AVOjqdpVjuD2co/o1H4x/irq4bAYce8iH1a/76g4dtKfBoA7UEsSiyKoHQW/jTwxK/oj5r/GuHFxqYlAWdRcQP0R9P40sYkdB/wDvjUBaVSCyf7UOgpQxP7P1/wANQBSxQBOGKPVfr/hpXtJ6/n/CoQpYoAliccCbjpbj9ay09iOzeWIxn/ND/wDXWj0ljQM5W72xIsEiQRFmVVC5ny5yBe2YqBfjVe7WN5FwSYfPh1nV3JyM7IA0dmRrrx15VcQfGPQ1ln8oY/Z4T9qT+yKAMs2pt7EYmR3lmkOZicudiqgkkItz7ovoKh2J4kn1JNRkNSImqWUhxSw0DMB5MRR04LUKRRzKKhQqzMMUu9ChUspGs/yd4F9pxc5/o4FX0DvmP/aFaJujFnklmbibD4sc7fkKKhXVi4xS/ByZecsfyWqZ65SrnxZJ/oolA9X1/ImhQpY+j9hz6r3KhvrKZcWsY+6EjH7TG5P9YfKrqYrAKNAoAHoBYUVCqz/TFehOHmUmKXDggjgT+6sqx+K72aRv12A9F0X6AUdCnpFyxavogbNb+cRD9KRFt+IVr8wswN+f0oUKNV1QaXozNO1mRZJo4zzbCrfqGnBI+Rps4ExyOp5G38KFCon9vsjSHf3ZJiFTIxQoVmzREvD0+KOhUjFx8amR0dCgCQopQoqFACxShR0KBixShQoUgBSWoqFADV/EPj+6sq/lCnw4P1l/JaOhQBjIp6M0KFIpEgGhQoVIz//Z"
+                            class="img-fluid w-100" alt="" />
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="tab-pane fade" id="feed-view" role="tabpanel">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                            <div class="w-100 fs-4">My Crazy dog Spark!</div>
+                            <small class="text-muted">08/26</small>
+                        </div>
+                        <img style="object-fit: cover;"
+                            src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+                            class="img-fluid w-100 col-12" alt="" />
+                        <div class="card-body">
+                            <p class="card-text fw-bold">204 Likes</p>
+                            <p class="card-text">This is an example of a very good photo that you can post on instagram
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                            <div class="w-100 fs-4">The greatness of Croatia</div>
+                            <small class="text-muted">04/09</small>
+                        </div>
+                        <img style="object-fit: cover;" src="https://wallpaperaccess.com/full/1149888.jpg"
+                            class="img-fluid w-100 col-12" alt="" />
+                        <div class="card-body">
+                            <p class="card-text fw-bold">26985 Likes</p>
+                            <p class="card-text">This is an example of a very good photo that you can post on instagram
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                            <div class="w-100 fs-4">Amazing GOAL by Cristiano!</div>
+                            <small class="text-muted">08/26</small>
+                        </div>
+                        <img style="object-fit: cover;"
+                            src="https://i.pinimg.com/736x/af/03/e8/af03e8f301698efda8006b4da49ebf52.jpg"
+                            class="img-fluid w-100 col-12" alt="" />
+                        <div class="card-body">
+                            <p class="card-text fw-bold">204 Likes</p>
+                            <p class="card-text">This is an example of a very good photo that you can post on instagram
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
     <div class="modal fade" id="createPostModal" tabindex="-1">
@@ -99,7 +175,8 @@
                 </div>
                 <div class="modal-body">
                     <label class="fw-bold mb-2">Caption:</label>
-                    <textarea class="form-control mb-3" rows="3" placeholder="Add the caption of your post here"></textarea>
+                    <textarea class="form-control mb-3" rows="3"
+                        placeholder="Add the caption of your post here"></textarea>
                     <button class="btn btn-light border btn-sm"><i class="fa-solid fa-camera"></i></button>
                     <button class="btn btn-light border btn-sm"><i class="fa-solid fa-location-dot"></i></button>
                 </div>
@@ -111,6 +188,8 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
 </body>
 </html>
